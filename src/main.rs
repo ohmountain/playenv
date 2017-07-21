@@ -60,9 +60,7 @@ fn main() {
 }
 
 fn get_args() -> Vec<String> {
-    env::args().skip(1).map(|x|{
-        x
-    }).collect()
+    env::args().skip(1).map(|x|x).collect()
 }
 
 fn get_var(var: &String) -> String {
